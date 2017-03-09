@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <string name="clear">C</string>
+    <string name="div0">Div by 0</string>
+
+    <string name="volume">Volume</string>
+    <string name="sphere">sphere</string>
+    <string name="cone">cone</string>
+    <string name="cylinder">cylinder</string>
+
+    <string name="radius">radius</string>
+    <string name="height">height</string>
+    <string name="result">result</string>
+    <string name="close">close</string>
+    <string name="calculate">calculate</string>
+</resources>

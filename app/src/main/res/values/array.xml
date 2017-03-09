@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screens">
+        <item>Geometry</item>
+        <item>Statistics</item>
+    </string-array>
+</resources>

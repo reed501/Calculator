@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="mean:"/>
+
+    <TextView
+        android:id="@+id/meanOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mean"
+        android:layout_toEndOf="@id/mean"
+        android:maxLength="8"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/median"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@id/mean"
+        android:text="median:"/>
+
+    <TextView
+        android:id="@+id/medianOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meanOut"
+        android:layout_toRightOf="@id/median"
+        android:layout_toEndOf="@id/median"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@id/median"
+        android:text="mode:"/>
+
+    <TextView
+        android:id="@+id/modeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medianOut"
+        android:layout_toRightOf="@id/mode"
+        android:layout_toEndOf="@id/mode"
+        android:padding="16dp"/>
+
+</RelativeLayout>

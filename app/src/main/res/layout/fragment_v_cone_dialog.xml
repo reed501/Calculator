@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.reedschrier.calculator.GeometryDialogFragment">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:hint="@string/radius"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_toEndOf="@id/input1"
+        android:layout_toRightOf="@id/input1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:hint="@string/height"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/input2"
+        android:layout_toEndOf="@id/input2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:hint="@string/result"/>
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_below="@id/input1"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/close"/>
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_below="@id/output"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/calculate"/>
+
+</RelativeLayout>
